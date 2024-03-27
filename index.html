@@ -9,24 +9,11 @@
 </head>
 <body onload="carte()">
     <a href="#"><img src=""></a>
-    <button onclick="copierTel()">Copier le numéro</button>
-    <button onclick="copierMail()">Copier le mail</button>
-    <a href="https://athemes.fr/"><button>Accéder au site web</button></a>
     <p></p>
 </body>
 <script>
     const para = document.querySelector("p");
     let copy;
-
-    function copierTel() {
-        var tel = copy.substring(4,15);
-        navigator.clipboard.writeText(tel);
-    }
-
-    function copierMail() {
-        var tel = copy.substring(21);
-        navigator.clipboard.writeText(tel);
-    }
 
     function carte() {
         const queryString = window.location.search;
